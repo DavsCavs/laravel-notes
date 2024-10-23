@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Create note</h1>
-    <form action="/note/store" method="post">
+    <form action="/notes" method="post">
+        @csrf
         <label for="title">Title</label>
         <input type="text" id="title" name="title">
         <label for="content">Content</label>
